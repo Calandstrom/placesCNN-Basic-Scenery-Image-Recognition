@@ -3,12 +3,14 @@ This script allows for basic scenery recognition using a pre-trained PlacesCNN m
 It uses the VScode terminal to run inferences on images.
 
 The command to use is:
-python /path/to/run_placesCNN_basic.py /path/to/image_or_directory --topk 5 --device cpu --out results.json
+python /path/to/run_placesCNN_basic.py /path/to/image_or_directory --topk 5 --specific-topk 'windmill,raceway' --device cpu --out results.json
 
 Arguments:
-topk - Number of top prefictions to return in the console (The defualt is 5)
+topk - Number of top predicitons to return in the console (The defualt is 5)
+specific-topk - Specific predictions to return in the console (The defualt is none)
 device - Device to run on, either 'cpu' or 'cuda'. Use 'cuda' only if you have a NVIDIA GPU otherwise use 'cpu' (The default is 'cpu')
 out - Optional JSON output file to save results (The default is no output file)
+
 '''
 
 
